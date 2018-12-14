@@ -1,0 +1,306 @@
+.hazards h3 {
+  font-size: 1.2em;
+}
+.hazards h3, p {
+  margin-top: 0;
+}
+
+/*Contenedor de caracter informativo*/
+.contentsHz{
+	text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 12px;
+}
+
+/*Selector de tipo de variable*/
+.menuHz{
+	width: 100%;
+	margin-bottom: 12px;
+	border-radius: 5px;
+	height: 32px;
+  border: 1px solid #ddd;
+}
+
+/*Opciones*/
+div.tabHz {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  margin-bottom: 12px;
+}
+
+
+div.tabHz button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    width: 50%;
+}
+
+
+div.tabHz button:hover {
+    background-color: #ddd;
+}
+
+
+.tabcontentHz{
+  display: none;
+}
+
+.tabcontentHz.active{
+  display: block;
+}
+
+.method.active{
+  background-color: #ccc;
+}
+
+
+/*Estilos de botones de dibujo*/
+
+.drawHz{
+  padding: 1%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+  margin-bottom: 12px;
+  /*background-color: #ddd;*/
+}
+
+
+#point{
+  background: url('img/point.png') no-repeat 50% 50%;
+  background-color: #ddd;
+}
+
+#polyline{
+  background: url('img/line.png') no-repeat 50% 50%;
+  background-color: #ddd;
+}
+
+#polygon{
+  background: url('img/polygon.png') no-repeat 50% 50%;
+  background-color: #ddd;
+}
+
+
+#erase{
+  background: url('img/delete.png') no-repeat 50% 50%;
+  background-color: #e95453;
+}
+
+/*.drawHz.active{
+  background-color: #e95453;
+}
+*/
+
+
+/*Estilos para el buscador de archivos locales*/
+
+
+div.uploadHz{
+  border-radius: 5px;
+  height: 38px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  margin-bottom: 12px;
+}
+
+
+div.uploadHz:hover {
+    opacity:0.95;
+}
+
+div.uploadHz input[type="file"] {
+    width: auto;
+    opacity: 0;
+    cursor:pointer;
+    position:absolute;
+    left:0;
+}
+
+.uploadButtonHz {
+    background-color: #004c73;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    cursor:pointer;
+    display: inline-block;
+    height: 30px;
+    margin-right:15px;
+    width: auto;
+    padding:0 20px;
+    box-sizing: content-box;
+}
+
+.tableContainerHz{
+  display: none;
+}
+
+
+.tableContainerHz.active{
+  display: block;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: */
+/*Estilos de la seccion de estado*/
+
+/*#loaderHz{
+  text-align: center;
+}*/
+
+#downloadHz{
+  /*display: flex;*/
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+#errorHz{
+  background: url('img/error.png') no-repeat 50% 50%;
+  background-size: 38px;
+  height: 100px;
+  opacity: 0.6;
+  text-align: center;
+  padding: 4%;
+}
+
+
+
+#loaderHz {
+  margin: 0 auto;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.status{
+  width: 100%;
+  display: none;
+}
+
+
+.status.active{
+  display: flex;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: */
+/*Estilos de tabla*/
+
+div.tableContainerHz{
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.tableHz thead{
+  background-color: #004c73;
+  color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.tableHz tbody td, table.tableHz tbody tr{
+  color: black;
+  cursor: pointer;
+}
+
+table.tableHz tbody tr:hover{
+  opacity: 0.7;
+}
+
+table.tableHz tbody td.MuyAlto{
+  background-color: #FF0000;
+}
+
+table.tableHz tbody td.Alto{
+  background-color: #FF8000;
+}
+
+
+table.tableHz tbody td.Medio{
+  background-color: #FFFF00;
+}
+
+
+table.tableHz tbody td.Bajo{
+  background-color: #8BD100;
+}
+
+table.tableHz tbody td.MuyBajo{
+  background-color: #38A800;
+}
+
+table.tableHz tbody td{
+  cursor: pointer;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#extentgeometry{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+progress#barHz {
+  text-align: center;
+}
+progress#barHz:after  {
+  content: attr(value)'%';
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.summary{
+  display: none;
+  height: 80px; 
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%; 
+  margin-bottom: 12px;
+  font-family: "Courier New", Times, monospace;
+  padding-bottom: 3%;
+}
+
+
+.summary.active{
+  display: block;
+}
